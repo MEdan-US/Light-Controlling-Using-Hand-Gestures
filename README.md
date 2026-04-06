@@ -16,8 +16,8 @@ This project implements a **Real-time Hand Gesture Recognition** system using **
 ├── detect_simulation.py  # Main execution script (Inference & UI)
 ├── hand_gesture.yaml     # Configuration file for gesture labels
 └── README.md             # Project documentation
-
-💻 How to Run
+```
+## 💻 How to Run
 1. Model Configuration
 Ensure your trained model is placed in the ./model/ directory. Open detect_simulation.py and verify the model_path at the bottom of the file:
 
@@ -41,7 +41,7 @@ turn_off: Switches all 3 lights OFF simultaneously.
 
 undefined command: Triggered when a gesture is detected but doesn't match a command.
 
-🧠 Technical Overview
+## 🧠 Technical Overview
 Hand Landmark Detection
 The system uses MediaPipe Hands to extract 21 landmarks (each with X, Y, Z coordinates). This 63-dimensional vector is then flattened and fed into the classifier.
 
