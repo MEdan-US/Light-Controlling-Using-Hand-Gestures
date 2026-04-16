@@ -15,7 +15,9 @@ This project implements a **Real-time Hand Gesture Recognition** system using **
 ├── controller.py         # Modbus Master implementation for hardware control
 ├── detect_simulation.py  # Main execution script (Inference & UI)
 ├── hand_gesture.yaml     # Configuration file for gesture labels
+├── requirements.txt      # Requirement library
 └── README.md             # Project documentation
+
 ```
 ## 💻 How to Run
 1. **Model Configuration** <br>
@@ -25,12 +27,16 @@ if __name__ == "__main__":
     model_path = "./model/model_06-04 03_10_NeuralNetwork_last"
     # ...
 ```
-2. **Execution**<br>
+2. **Install Library** <br>
+```python
+pip install -r requirements.txt
+```
+3. **Execution**<br>
 Run the main simulation script from your terminal:
 ```python
 python detect_simulation.py
 ```
-3. **Controls & Gestures** <br> 
+4. **Controls & Gestures** <br> 
 The system recognizes gestures based on the labels in hand_gesture.yaml. Show your hand to the webcam to trigger:
 
 
